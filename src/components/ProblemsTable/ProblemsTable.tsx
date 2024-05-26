@@ -44,7 +44,7 @@ const ProblemsTable: React.FC<ProblemsTableProps> = ({ setLoadingProblems }) => 
 							? "text-dark-yellow"
 							: "text-dark-pink";
 					return (
-						<tr className={`${idx % 2 == 1 ? "bg-dark-layer-1" : ""}`} key={doc.id}>
+						<tr className={`${idx % 2 == 1 ? "bg-dark-layer-1" : ""}`} key={idx}>
 							<th className='px-2 py-4 font-medium whitespace-nowrap text-dark-green-s'>
 								{solvedProblems.includes(problem.id) && <BsCheckCircle fontSize={"18"} width='18' />}
 							</th>
